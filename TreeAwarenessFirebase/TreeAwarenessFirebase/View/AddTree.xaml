@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+          
+             x:Class="TreeAwarenessFirebase.View.AddTree">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Spacing="20" Padding="15">
+                <Label Text="Tree Details" FontAttributes="Bold" FontSize="Title" TextColor="WhiteSmoke" />
+                <StackLayout Margin="10" VerticalOptions="StartAndExpand" HorizontalOptions="FillAndExpand">
+                   
+                    <Editor Text="{Binding TreeCode}" Placeholder="Enter Code..." AutoSize="TextChanges" TextColor="WhiteSmoke" BackgroundColor="OliveDrab" PlaceholderColor="White" />
+                    <Entry Text="{Binding Name}" Placeholder="Enter Tree Name" TextColor="WhiteSmoke" BackgroundColor="OliveDrab" PlaceholderColor="White" />
+                    <Editor Text="{Binding InitialIdentification}" Placeholder="Enter Identification..." AutoSize="TextChanges" TextColor="WhiteSmoke" BackgroundColor="OliveDrab" PlaceholderColor="White" />
+                    <Editor Text="{Binding Notes}" Placeholder="Enter Notes..." TextColor="WhiteSmoke" BackgroundColor="OliveDrab" PlaceholderColor="White"/>
+                    <Entry Text="{Binding GPSCoordinates}"  x:Name="resultLocation" TextColor="WhiteSmoke" BackgroundColor="OliveDrab"  />
+                    <Entry Text="{Binding Location}" Placeholder="Enter Location" TextColor="WhiteSmoke" BackgroundColor="OliveDrab" PlaceholderColor="White" />
+                    <Entry Text="{Binding Landmark}" Placeholder="Enter Landmark" TextColor="WhiteSmoke" BackgroundColor="OliveDrab" PlaceholderColor="White"/>
+
+                    <Entry Text="{Binding Height}" Placeholder="Enter Height..."  TextColor="WhiteSmoke" BackgroundColor="OliveDrab" PlaceholderColor="White"/>
+                    <Entry Text="{Binding Canopy}" Placeholder="Enter Canopy..." TextColor="WhiteSmoke" BackgroundColor="OliveDrab" PlaceholderColor="White"/>
+
+                    <Button WidthRequest="155" Text="Add"   Clicked="OnAlertClicked" Command="{Binding AddTreeCommand}"/>
+
+                  
+                    
+                    <StackLayout>
+                        <Label Text="Geolocator"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand"   FontSize="Title" FontAttributes="Bold"/>
+
+                        <Button Text="Geolocate" Clicked="Button_Clicked"/>
+                        <Button Text="Stop Geolocating" Clicked="Button_StopAction"/>
+                     
+                    </StackLayout>
+                </StackLayout>
+            </StackLayout>
+            
+            
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

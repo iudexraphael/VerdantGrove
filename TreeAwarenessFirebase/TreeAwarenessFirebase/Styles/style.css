@@ -1,0 +1,97 @@
+navigationpage {
+	-xf-bar-background-color: lightgray;
+}
+
+^contentpage {
+	background-color: lightgray;
+}
+
+#listView {
+	background-color: lightgray;
+}
+
+stacklayout {
+	margin: 20;
+}
+
+.mainPageTitle {
+	font-style: bold;
+	font-size: medium;
+}
+
+.mainPageSubtitle {
+	margin-top: 15;
+}
+
+.detailPageTitle {
+	font-style: bold;
+	font-size: medium;
+	text-align: center;
+}
+
+.detailPageSubtitle {
+	text-align: center;
+	font-style: italic;
+}
+
+listview image {
+	height: 60;
+	width: 60;
+}
+
+stacklayout > image {
+	height: 200;
+	width: 200;
+}
+
+.body {
+	color: #fff;
+	align-items: center;
+	justify-content: center;
+	background-color: #053C5E;
+}
+
+.container {
+	background-color: #0A2239;
+	width: 300;
+	height: 340;
+	flex-direction: column;
+	margin-top: -30;
+}
+
+.login-form {
+	height: 260;
+	flex-direction: column;
+	margin-top: 20;
+}
+
+.logo {
+	font-size: 20;
+	margin-top: 40;
+	text-align: center;
+}
+
+entry {
+	height: 50;
+	margin: 10 20 0;
+	color: #333;
+}
+
+button {
+	background-color: rgb(0, 166, 165);
+	
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	
+}
+
+.Valid {
+	background-color: #fff;
+}
+
+.InValid {
+	background-color: #ff0000;
+}
+
+.strength {
+	margin-top: 20;
+}

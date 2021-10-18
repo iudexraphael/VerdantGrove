@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="TreeAwarenessFirebase.View.AboutInfo" BackgroundImageSource="trees.png">
+    <ContentPage.Content>
+        <Grid >
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <StackLayout  VerticalOptions="FillAndExpand" HorizontalOptions="Fill">
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
+                    <ContentView Padding="0,40,0,40" VerticalOptions="FillAndExpand">
+
+                    </ContentView>
+                </StackLayout>
+            </StackLayout>
+          
+            <ScrollView Grid.Row="1">
+                <StackLayout Orientation="Vertical" Padding="16,40,16,40" Spacing="10">
+                    <Label FontSize="22" BackgroundColor="CadetBlue" Padding="10">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <FormattedString.Spans>
+                                    <Span Text="About" FontAttributes="Bold" FontSize="22" TextColor="White" />
+                                    <Span Text=" " />
+
+                                </FormattedString.Spans>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                    <Label BackgroundColor="Khaki" Padding="20" TextColor="DarkGreen">
+                        <Label.FormattedText>
+                            <FormattedString >
+                                <FormattedString.Spans >
+                                    <Span Text="Yggdrassil is an application that is dedicated to raising the awareness of trees and plants." TextColor="DarkGreen"/>
+                                    <Span Text=" " />
+                                    <Span Text=" This application is made and developed by the people of BSIT3.-1" FontAttributes="Italic" TextColor="DarkGreen" />
+                                    <Span Text="." />
+                                    <Span Text="   " />
+                                    <Span Text="Developers:" />
+                                    <Span Text=" " />
+                                    <Span Text="Joseph Canlas" />
+                                    <Span Text=" " />
+                                    <Span Text="Erwin Castro" />
+                                    <Span Text=" " />
+                                    <Span Text="Kaila David" />
+                                    <Span Text=" " />
+                                    <Span Text="Erwin Galura" />
+                              
+                                </FormattedString.Spans>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                    <Label>
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <FormattedString.Spans>
+
+                                  
+
+                                </FormattedString.Spans>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                  
+                </StackLayout>
+            </ScrollView>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "647755634982",
+    "firebase_url": "https://treeawareness-3775a-default-rtdb.firebaseio.com",
+    "project_id": "treeawareness-3775a",
+    "storage_bucket": "treeawareness-3775a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:647755634982:android:a79b5ad40ff8d26ccd49e7",
+        "android_client_info": {
+          "package_name": "com.companyname.treeawarenessfirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "647755634982-4jod3iht2d8momehhu25t9n8mlkns25v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDHKV0yZlcTXzVHNb7Murz43OMCtS2d5s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "647755634982-4jod3iht2d8momehhu25t9n8mlkns25v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

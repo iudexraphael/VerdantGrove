@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TreeAwarenessFirebase.View.SignUpPage">
+    <ContentPage.Content>
+        <StackLayout Padding="0">
+            <Grid>
+                <StackLayout Padding="0" Margin="0">
+                    <Frame BackgroundColor="olivedrab" HeightRequest="130" HorizontalOptions="FillAndExpand">
+
+
+                    </Frame>
+
+                </StackLayout>
+
+                <StackLayout Margin="15,110,15,0">
+
+                    <Frame BackgroundColor="White" HasShadow="True" HeightRequest="320" HorizontalOptions="FillAndExpand">
+                        <StackLayout>
+                            <StackLayout HorizontalOptions="CenterAndExpand">
+
+                                <Label Text="Create an Account" TextColor="LightBlue" FontSize="35" FontAttributes="Bold"/>
+
+
+                            </StackLayout>
+
+                            <StackLayout Margin="0,25,0,0">
+
+                                <Frame BackgroundColor="Transparent" BorderColor="DarkGray" Padding="0" Margin="0" CornerRadius="50" HorizontalOptions="FillAndExpand">
+                                    <StackLayout Orientation="Horizontal">
+                                        <Frame BackgroundColor="AliceBlue" CornerRadius="50" HeightRequest="35" WidthRequest="35" Padding="0" HorizontalOptions="Start" Margin="7">
+
+
+                                        </Frame>
+                                        <Entry 
+                                        Placeholder="Email"
+                                         Keyboard="Email"
+                                        TextColor="OliveDrab"
+                                        Margin="0,0,15,0"
+                                         HorizontalOptions="FillAndExpand"
+                                         x:Name="EmailInput"/>
+
+
+                                    </StackLayout>
+                                </Frame>
+
+                                <Frame BackgroundColor="Transparent" BorderColor="DarkGray" Padding="0" Margin="0" CornerRadius="50" HorizontalOptions="FillAndExpand">
+                                    <StackLayout Orientation="Horizontal">
+                                        <Frame BackgroundColor="AliceBlue" CornerRadius="50" HeightRequest="35" WidthRequest="35" Padding="0" HorizontalOptions="Start" Margin="7">
+
+                                        </Frame>
+                                        <Entry 
+                                                   
+                                          Placeholder="Password"
+                                         IsPassword="True"
+                                        HorizontalOptions="FillAndExpand"
+                                         Margin="0,0,15,0"
+                                        TextColor="OliveDrab"
+                                             x:Name="PasswordInput"/>
+
+                                    </StackLayout>
+                                </Frame>
+                                <StackLayout Orientation="Horizontal">
+                                    <CheckBox IsChecked="True" Color="OliveDrab"/>
+                                    <Label Text="Remember me" HorizontalTextAlignment="Start" VerticalTextAlignment="Center"/>
+
+                                    <Label Text="Forgot Password" HorizontalTextAlignment="End" TextColor="OliveDrab" HorizontalOptions="EndAndExpand"/>
+
+                                </StackLayout>
+                                <Button
+                                    Text="Create"
+                                    Clicked="SignUpClicked"
+                                    CornerRadius="20"
+                                    BackgroundColor="olivedrab"
+                                         TextColor="LightBlue"/>
+
+
+                            </StackLayout>
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+            </Grid>
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

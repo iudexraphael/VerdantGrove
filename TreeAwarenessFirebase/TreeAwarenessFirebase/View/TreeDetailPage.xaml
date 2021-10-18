@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TreeAwarenessFirebase.View.TreeDetailPage">
+    <ContentPage.Content>
+        <ScrollView>
+            
+            <StackLayout Spacing="20" Padding="15">
+               
+                <Label Text="Tree Details" FontAttributes="Bold" FontSize="Title" TextColor="WhiteSmoke" />
+                <StackLayout Margin="10" VerticalOptions="StartAndExpand" HorizontalOptions="FillAndExpand">
+
+                    <Label Text="Tree Name" FontAttributes="Bold" FontSize="Medium" TextColor="WhiteSmoke"/>
+                    <Editor Text="{Binding Name}" IsReadOnly = "True"  TextColor="White" BackgroundColor="OliveDrab" />
+
+                    <Label Text="Identity" FontAttributes="Bold" FontSize="Medium" TextColor="WhiteSmoke"/>
+                    <Editor Text="{Binding InitialIdentification}" IsReadOnly = "True"  AutoSize="TextChanges" TextColor="White" BackgroundColor="OliveDrab"  />
+
+                    <Label Text="Notes" FontAttributes="Bold" FontSize="Medium" TextColor="WhiteSmoke"/>
+                    <Editor Text="{Binding Notes}" IsReadOnly = "True"  AutoSize="TextChanges"  TextColor="White" BackgroundColor="OliveDrab"/>
+
+                    <Label Text="Coordinates" FontAttributes="Bold" FontSize="Medium" TextColor="WhiteSmoke"/>
+                    <Entry Text="{Binding GPSCoordinates}" IsReadOnly = "True" TextColor="White" BackgroundColor="OliveDrab"  />
+
+                    <Label Text="Location" FontAttributes="Bold" FontSize="Medium" TextColor="WhiteSmoke"/>
+                    <Entry Text="{Binding Location}" IsReadOnly = "True" TextColor="White" BackgroundColor="OliveDrab" />
+
+                    <Label Text="Landmark" FontAttributes="Bold" FontSize="Medium" TextColor="WhiteSmoke"/>
+                    <Entry Text="{Binding Landmark}" IsReadOnly = "True" TextColor="White" BackgroundColor="OliveDrab" />
+
+                    <Label Text="Height" FontAttributes="Bold" FontSize="Medium" TextColor="WhiteSmoke"/>
+                    <Entry Text="{Binding Height}" IsReadOnly = "True" TextColor="White" BackgroundColor="OliveDrab" />
+
+                    <Label Text="Canopy" FontAttributes="Bold" FontSize="Medium" TextColor="WhiteSmoke"/>
+                    <Entry Text="{Binding Canopy}" IsReadOnly = "True" TextColor="White" BackgroundColor="OliveDrab" />
+
+                    <Button Text="Delete" Clicked="BtnDelete"/>
+                    <Button Text="Update" Clicked="BtnUpdate"/> 
+         
+        </StackLayout>
+        </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

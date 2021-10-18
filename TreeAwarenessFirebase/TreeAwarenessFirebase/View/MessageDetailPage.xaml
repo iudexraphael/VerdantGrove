@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TreeAwarenessFirebase.View.MessageDetailPage">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Entry x:Name="MessageID" Text="{Binding MessageID}"  IsReadOnly="True" />
+            <Entry x:Name="Username" Text="{Binding Username}" />
+            <Editor x:Name="Comment" Text="{Binding Comment}"  AutoSize="TextChanges" />
+
+            <Button Text="Update" Clicked="BtnUpdate"/>
+            <Button Text="Delete" Clicked="BtnDelete"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
