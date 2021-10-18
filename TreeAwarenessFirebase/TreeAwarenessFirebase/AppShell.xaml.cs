@@ -16,15 +16,6 @@ namespace TreeAwarenessFirebase
             InitializeComponent();
         }
 
-        public Command LogoutCommand
-        {
-            get
-            {
-                return new Command(() =>
-                {
-                    App.Current.MainPage.Navigation.PopAsync();
-                });
-            }
-        }
+       
     }
 }

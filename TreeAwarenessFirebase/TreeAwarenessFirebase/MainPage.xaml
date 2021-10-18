@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="TreeAwarenessFirebase.MainPage">
+             x:Class="TreeAwarenessFirebase.MainPage"
+             BackgroundImageSource="autumn.jpg">
 
     <StackLayout Padding="0">
         <Grid>
@@ -19,15 +20,15 @@
                     <StackLayout>
                         <StackLayout HorizontalOptions="CenterAndExpand">
 
-                            <Label Text="Sign In" TextColor="LightBlue" FontSize="35" FontAttributes="Bold"/>
+                            <Label Text="Sign In" TextColor="Black" FontSize="35" FontAttributes="Bold"/>
 
 
                         </StackLayout>
 
                         <StackLayout Margin="0,25,0,0">
 
-                            <Frame BackgroundColor="Transparent" BorderColor="DarkGray" Padding="0" Margin="0" CornerRadius="50" HorizontalOptions="FillAndExpand">
-                                <StackLayout Orientation="Horizontal">
+                            <Frame BackgroundColor="Transparent" BorderColor="DarkGray" Padding="0" Margin="0" CornerRadius="50" HorizontalOptions="FillAndExpand" >
+                                <StackLayout Orientation="Horizontal" >
                                     <Frame BackgroundColor="AliceBlue" CornerRadius="50" HeightRequest="35" WidthRequest="35" Padding="0" HorizontalOptions="Start" Margin="7">
 
 
@@ -79,7 +80,8 @@
                                  Clicked="SignUpClicked"
                                  CornerRadius="20"
                              BackgroundColor="olivedrab"
-                             TextColor="LightBlue"/>
+                             TextColor="LightBlue"
+                                />
 
                         </StackLayout>
                     </StackLayout>

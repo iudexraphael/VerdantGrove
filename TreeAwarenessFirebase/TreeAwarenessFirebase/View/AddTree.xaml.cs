@@ -27,7 +27,7 @@ namespace TreeAwarenessFirebase.View
         }
         string lat = "47.673988";
         string lon = "-122.121513";
-        string address = "Microsoft Building 25 Redmond WA USA";
+        string address = "Angeles City";
         string geocodeAddress;
         string geocodePosition;
 
@@ -181,6 +181,9 @@ namespace TreeAwarenessFirebase.View
             isGettingLocation = false;
         }
 
-
+        private async void GeocodePage(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new GeocodingPage());
+        }
     }
 }

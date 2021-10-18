@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="TreeAwarenessFirebase.View.TreeDetailPage">
+             x:Class="TreeAwarenessFirebase.View.TreeDetailPage"
+             BackgroundImageSource="wilds.jpg">
     <ContentPage.Content>
         <ScrollView>
             
@@ -9,30 +10,31 @@
                
                 <Label Text="Tree Details" FontAttributes="Bold" FontSize="Title" TextColor="WhiteSmoke" />
                 <StackLayout Margin="10" VerticalOptions="StartAndExpand" HorizontalOptions="FillAndExpand">
+                    <Editor x:Name="TreeCode" Text="{Binding TreeCode}" IsReadOnly = "True" AutoSize="TextChanges" TextColor="WhiteSmoke" BackgroundColor="OliveDrab" PlaceholderColor="White" Margin="40"/>
 
                     <Label Text="Tree Name" FontAttributes="Bold" FontSize="Medium" TextColor="WhiteSmoke"/>
-                    <Editor Text="{Binding Name}" IsReadOnly = "True"  TextColor="White" BackgroundColor="OliveDrab" />
+                    <Editor x:Name="Name" Text="{Binding Name}"   TextColor="White" BackgroundColor="OliveDrab" />
 
                     <Label Text="Identity" FontAttributes="Bold" FontSize="Medium" TextColor="WhiteSmoke"/>
-                    <Editor Text="{Binding InitialIdentification}" IsReadOnly = "True"  AutoSize="TextChanges" TextColor="White" BackgroundColor="OliveDrab"  />
+                    <Editor x:Name="InitialIdentification" Text="{Binding InitialIdentification}"   AutoSize="TextChanges" TextColor="White" BackgroundColor="OliveDrab"  />
 
                     <Label Text="Notes" FontAttributes="Bold" FontSize="Medium" TextColor="WhiteSmoke"/>
-                    <Editor Text="{Binding Notes}" IsReadOnly = "True"  AutoSize="TextChanges"  TextColor="White" BackgroundColor="OliveDrab"/>
+                    <Editor x:Name="Notes" Text="{Binding Notes}"  AutoSize="TextChanges"  TextColor="White" BackgroundColor="OliveDrab"/>
 
                     <Label Text="Coordinates" FontAttributes="Bold" FontSize="Medium" TextColor="WhiteSmoke"/>
-                    <Entry Text="{Binding GPSCoordinates}" IsReadOnly = "True" TextColor="White" BackgroundColor="OliveDrab"  />
+                    <Entry x:Name="GPSCoordinates" Text="{Binding GPSCoordinates}"  TextColor="White" BackgroundColor="OliveDrab"  />
 
                     <Label Text="Location" FontAttributes="Bold" FontSize="Medium" TextColor="WhiteSmoke"/>
-                    <Entry Text="{Binding Location}" IsReadOnly = "True" TextColor="White" BackgroundColor="OliveDrab" />
+                    <Entry x:Name="Location" Text="{Binding Location}" TextColor="White" BackgroundColor="OliveDrab" />
 
                     <Label Text="Landmark" FontAttributes="Bold" FontSize="Medium" TextColor="WhiteSmoke"/>
-                    <Entry Text="{Binding Landmark}" IsReadOnly = "True" TextColor="White" BackgroundColor="OliveDrab" />
+                    <Entry x:Name="Landmark" Text="{Binding Landmark}" TextColor="White" BackgroundColor="OliveDrab" />
 
                     <Label Text="Height" FontAttributes="Bold" FontSize="Medium" TextColor="WhiteSmoke"/>
-                    <Entry Text="{Binding Height}" IsReadOnly = "True" TextColor="White" BackgroundColor="OliveDrab" />
+                    <Entry x:Name="Height" Text="{Binding Height}" TextColor="White" BackgroundColor="OliveDrab" />
 
                     <Label Text="Canopy" FontAttributes="Bold" FontSize="Medium" TextColor="WhiteSmoke"/>
-                    <Entry Text="{Binding Canopy}" IsReadOnly = "True" TextColor="White" BackgroundColor="OliveDrab" />
+                    <Entry x:Name="Canopy" Text="{Binding Canopy}"  TextColor="White" BackgroundColor="OliveDrab" />
 
                     <Button Text="Delete" Clicked="BtnDelete"/>
                     <Button Text="Update" Clicked="BtnUpdate"/> 

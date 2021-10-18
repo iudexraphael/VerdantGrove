@@ -1,7 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="TreeAwarenessFirebase.View.SignUpPage">
+             x:Class="TreeAwarenessFirebase.View.SignUpPage"
+              Title="Verdant Grove"
+             
+             BackgroundImageSource="GardenOfWords.jpg">
     <ContentPage.Content>
         <StackLayout Padding="0">
             <Grid>
@@ -19,7 +22,7 @@
                         <StackLayout>
                             <StackLayout HorizontalOptions="CenterAndExpand">
 
-                                <Label Text="Create an Account" TextColor="LightBlue" FontSize="35" FontAttributes="Bold"/>
+                                <Label Text="Create an Account" TextColor="Black" FontSize="35" FontAttributes="Bold"/>
 
 
                             </StackLayout>
@@ -73,9 +76,15 @@
                                     CornerRadius="20"
                                     BackgroundColor="olivedrab"
                                          TextColor="LightBlue"/>
-
+                                <Button
+                                    Text="Back"
+                                    Clicked="SignOutButton_Clicked"
+                                    CornerRadius="20"
+                                    BackgroundColor="olivedrab"
+                                         TextColor="LightBlue"/>
 
                             </StackLayout>
+                            
                         </StackLayout>
                     </Frame>
                 </StackLayout>

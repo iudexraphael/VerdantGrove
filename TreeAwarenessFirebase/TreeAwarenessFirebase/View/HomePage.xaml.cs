@@ -40,6 +40,10 @@ namespace TreeAwarenessFirebase.View
             await Navigation.PushAsync(new AddMessagePage());
         }
 
+        private async void GeocodePage(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new GeocodingPage());
+        }
         void SignOutButton_Clicked(object sender, EventArgs e)
         {
             var signOut = auth.SignOut();

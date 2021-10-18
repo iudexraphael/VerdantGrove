@@ -2,20 +2,22 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
           
-             x:Class="TreeAwarenessFirebase.View.AddTree">
+             x:Class="TreeAwarenessFirebase.View.AddTree"
+             BackgroundImageSource="greenhouse.jpg"
+             Title="Yggdrassil">
     <ContentPage.Content>
         <ScrollView>
             <StackLayout Spacing="20" Padding="15">
-                <Label Text="Tree Details" FontAttributes="Bold" FontSize="Title" TextColor="WhiteSmoke" />
+                <Label Text="Tree Details" FontAttributes="Bold" FontSize="Title" TextColor="White" BackgroundColor="Green"/>
                 <StackLayout Margin="10" VerticalOptions="StartAndExpand" HorizontalOptions="FillAndExpand">
                    
-                    <Editor Text="{Binding TreeCode}" Placeholder="Enter Code..." AutoSize="TextChanges" TextColor="WhiteSmoke" BackgroundColor="OliveDrab" PlaceholderColor="White" />
+                    <Editor Text="{Binding TreeCode}" Placeholder="Enter Code..." AutoSize="TextChanges" TextColor="WhiteSmoke" BackgroundColor="OliveDrab" PlaceholderColor="White" Margin="40"/>
                     <Entry Text="{Binding Name}" Placeholder="Enter Tree Name" TextColor="WhiteSmoke" BackgroundColor="OliveDrab" PlaceholderColor="White" />
                     <Editor Text="{Binding InitialIdentification}" Placeholder="Enter Identification..." AutoSize="TextChanges" TextColor="WhiteSmoke" BackgroundColor="OliveDrab" PlaceholderColor="White" />
                     <Editor Text="{Binding Notes}" Placeholder="Enter Notes..." TextColor="WhiteSmoke" BackgroundColor="OliveDrab" PlaceholderColor="White"/>
-                    <Entry Text="{Binding GPSCoordinates}"  x:Name="resultLocation" TextColor="WhiteSmoke" BackgroundColor="OliveDrab"  />
-                    <Entry Text="{Binding Location}" Placeholder="Enter Location" TextColor="WhiteSmoke" BackgroundColor="OliveDrab" PlaceholderColor="White" />
-                    <Entry Text="{Binding Landmark}" Placeholder="Enter Landmark" TextColor="WhiteSmoke" BackgroundColor="OliveDrab" PlaceholderColor="White"/>
+                    <Entry Text="{Binding GPSCoordinates}"  x:Name="resultLocation" Placeholder="GPS Coordinates" TextColor="WhiteSmoke" BackgroundColor="OliveDrab" Margin="10" />
+                    <Entry Text="{Binding Location}" Placeholder="Enter Location" TextColor="WhiteSmoke" BackgroundColor="OliveDrab" PlaceholderColor="White" Margin="10"/>
+                    <Entry Text="{Binding Landmark}" Placeholder="Enter Landmark" TextColor="WhiteSmoke" BackgroundColor="OliveDrab" PlaceholderColor="White" Margin="10"/>
 
                     <Entry Text="{Binding Height}" Placeholder="Enter Height..."  TextColor="WhiteSmoke" BackgroundColor="OliveDrab" PlaceholderColor="White"/>
                     <Entry Text="{Binding Canopy}" Placeholder="Enter Canopy..." TextColor="WhiteSmoke" BackgroundColor="OliveDrab" PlaceholderColor="White"/>
@@ -27,13 +29,15 @@
                     <StackLayout>
                         <Label Text="Geolocator"
                 VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand"   FontSize="Title" FontAttributes="Bold"/>
+                HorizontalOptions="CenterAndExpand"  TextColor="Black" FontSize="Title" FontAttributes="Bold"/>
 
                         <Button Text="Geolocate" Clicked="Button_Clicked"/>
                         <Button Text="Stop Geolocating" Clicked="Button_StopAction"/>
                      
                     </StackLayout>
                 </StackLayout>
+                <Button Text="Geocoding Page" Clicked="GeocodePage"  Margin="5" CornerRadius="50"  TextColor="Black" FontAttributes="Bold"/>
+
             </StackLayout>
             
             

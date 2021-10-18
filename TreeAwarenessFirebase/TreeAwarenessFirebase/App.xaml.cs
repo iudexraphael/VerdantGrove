@@ -17,7 +17,7 @@ namespace TreeAwarenessFirebase
 
             if (auth.IsSignIn())
             {
-                MainPage = new AppShell();
+                MainPage = new MainPage();
             }
             else
             {

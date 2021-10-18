@@ -20,19 +20,8 @@
         <Style TargetType="ShellItem"
                BasedOn="{StaticResource BaseStyle}" />
     </Shell.Resources>
-
-
-    <FlyoutItem Title="Atrium" Icon="Flowers.png">
-        <ShellContent  ContentTemplate="{DataTemplate pages:HomePage}" Route="HomePage"/>
-        </FlyoutItem>
-
-    <FlyoutItem Title="Geocoding">
-        <ShellContent  ContentTemplate="{DataTemplate pages:GeocodingPage}" Route="GeocodingPage"/>
-    </FlyoutItem>
-
-    <FlyoutItem Title="Great Greenhouse" Icon="greenhouse.png">
-        <ShellContent  ContentTemplate="{DataTemplate pages:TreeView}" Route="TreeView"/>
-    </FlyoutItem>
+    
+   
 
    
 

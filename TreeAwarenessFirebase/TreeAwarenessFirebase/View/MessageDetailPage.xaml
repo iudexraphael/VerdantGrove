@@ -1,17 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="TreeAwarenessFirebase.View.MessageDetailPage">
+             x:Class="TreeAwarenessFirebase.View.MessageDetailPage"
+             BackgroundColor="MediumSeaGreen"
+              Title="Yggdrassil">
     <ContentPage.Content>
         <StackLayout>
+            <Label Text="Edit your Thoughts" FontAttributes="Bold" FontSize="Title" TextColor="White" BackgroundColor="Green"/>
 
-            <Entry x:Name="MessageID" Text="{Binding MessageID}"  IsReadOnly="True" />
-            <Entry x:Name="Username" Text="{Binding Username}" />
-            <Editor x:Name="Comment" Text="{Binding Comment}"  AutoSize="TextChanges" />
+            <Entry x:Name="MessageID" Text="{Binding MessageID}"  IsReadOnly="True" BackgroundColor="Aqua" Margin="25"/>
+            <Entry x:Name="Username" Text="{Binding Username}" Margin="25" BackgroundColor="DarkKhaki"/>
+            <Editor x:Name="Comment" Text="{Binding Comment}"  AutoSize="TextChanges" Margin="25"  BackgroundColor="DarkKhaki"/>
 
-            <Button Text="Update" Clicked="BtnUpdate"/>
-            <Button Text="Delete" Clicked="BtnDelete"/>
 
+
+            <Button Text="Update" Clicked="BtnUpdate" CornerRadius="50"  WidthRequest="90"  TextColor="White" FontAttributes="Bold" Margin="50" BackgroundColor="Blue"/>
+            <Button Text="Delete" Clicked="BtnDelete" WidthRequest="50"  CornerRadius="50" Margin="50" BackgroundColor="DarkRed" TextColor="White"/>
+           
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

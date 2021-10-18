@@ -31,6 +31,7 @@ namespace TreeAwarenessFirebase.View
             {
                 await DisplayAlert("Success", "New User Created", "ok");
                 var signOut = auth.SignOut();
+               
                 if (signOut)
                 {
                     Application.Current.MainPage = new MainPage();
@@ -41,6 +42,11 @@ namespace TreeAwarenessFirebase.View
             {
                 await DisplayAlert("error", "Something went wrong, please try again later", "ok");
             }
+        }
+
+        async void SignOutButton_Clicked(object sender, EventArgs e)
+        {
+            Application.Current.MainPage = new MainPage();
         }
     }
 }

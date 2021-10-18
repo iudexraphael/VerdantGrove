@@ -2,7 +2,8 @@
     
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="TreeAwarenessFirebase.View.HomePage">
+             x:Class="TreeAwarenessFirebase.View.HomePage"
+              Title="Yggdrassil">
 
     <Shell.TitleView>
         <StackLayout Orientation="Horizontal">
@@ -93,26 +94,15 @@
                        
                     </StackLayout>
 
-                    <StackLayout  Grid.Row="0" Grid.Column="0" Margin="5"  Orientation="Horizontal" HorizontalOptions="FillAndExpand">
-
-                        <Button Text="Garden of Words" Clicked="MessageNextPage"  CornerRadius="50"  TextColor="Black" FontAttributes="Bold" />
-                    </StackLayout>
+                
                     <Button Text="Garden of Words" Clicked="MessageNextPage"  Grid.Row="0" Grid.Column="0" Margin="5" CornerRadius="50"  TextColor="Black" FontAttributes="Bold" />
 
                     <Button Text="Great Greenhouse" Clicked="ProjNextPage" Grid.Row="0" Grid.Column="1"  Margin="5" CornerRadius="50"  TextColor="Black" FontAttributes="Bold"/>
 
-
-                    <Button Text="Plant your thoughts" Clicked="PlantAtGardenPage"  Grid.Row="1" Grid.Column="0" CornerRadius="50"    Margin="5"  TextColor="Black" FontAttributes="Bold"/>
-
-                    <Button Text="About"  Clicked="AboutNextPage"  Grid.Row="1" Grid.Column="1"  Margin="5" CornerRadius="50"   TextColor="Black" FontAttributes="Bold" />
+                    <Button Text="About"  Clicked="AboutNextPage"  Grid.Row="1" Grid.Column="0"  Margin="5" CornerRadius="50"   TextColor="Black" FontAttributes="Bold" />
 
 
-                    <Button
-            Text="Sign Out"
-                         Grid.Row="1" Grid.Column="1"  Margin="5" CornerRadius="50"
-            Clicked="SignOutButton_Clicked"
-                        TextColor="Black" FontAttributes="Bold"
-            HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
+                    <Button Text="Sign Out"     Grid.Row="1" Grid.Column="1"  Margin="5" CornerRadius="50"  Clicked="SignOutButton_Clicked" TextColor="Black" FontAttributes="Bold"/>
                 </Grid>
                 
 

@@ -1,12 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="TreeAwarenessFirebase.View.AddMessagePage">
+             x:Class="TreeAwarenessFirebase.View.AddMessagePage"
+             BackgroundImageSource="wordsgarden.jpg"
+              Title="Verdant Grove">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout Grid.Row="0" VerticalOptions="Start" Background="wordsgarden.jpg">
+            <Label Text="Garden of Words" FontAttributes="Bold" FontSize="Title"  TextColor="CadetBlue" />
+
+            <Entry Text="{Binding MessageID}" Placeholder="ID..." />
+            <Entry Text="{Binding Username}" Placeholder="Name..."/>
+            <Editor Text="{Binding Comment}" Placeholder="Share your thoughts..." AutoSize="TextChanges" />
+
+            <Button WidthRequest="155" Text="Add" Command="{Binding AddMessageCommand}"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -16,6 +16,7 @@ namespace TreeAwarenessFirebase.View
     {
         public TreeDetailPage()
         {
+
             InitializeComponent();
         }
         DBFirebase services;
@@ -27,16 +28,29 @@ namespace TreeAwarenessFirebase.View
         }
         public async void BtnDelete(object sender, EventArgs e)
         {
-            //await services.DeleteMessage(
-            //    int.Parse(MessageID.Text), Username.Text, Comment.Text);
-            //await Navigation.PushAsync(new MessageView());
+            await services.DeleteTree(
+                int.Parse(TreeCode.Text), Name.Text, InitialIdentification.Text, Notes.Text,
+               GPSCoordinates.Text,
+               Location.Text,
+               Landmark.Text,
+              Height.Text,
+              Canopy.Text
+              );
+            await Navigation.PushAsync(new TreeView());
         }
 
         public async void BtnUpdate(object sender, EventArgs e)
         {
-            //await services.UpdateMessage(
-            //    int.Parse(MessageID.Text), Username.Text, Comment.Text);
-            //await Navigation.PushAsync(new MessageView());
+            await services.UpdateTree(
+                 int.Parse(TreeCode.Text), Name.Text, InitialIdentification.Text, Notes.Text,
+               GPSCoordinates.Text,
+               Location.Text,
+               Landmark.Text,
+              Height.Text,
+              Canopy.Text);
+            await Navigation.PushAsync(new TreeView());
         }
+
+
     }
 }
